@@ -7,10 +7,24 @@ export default function TabLayout() {
   return (
       <Tabs
           screenOptions={{
-            tabBarActiveTintColor: '#ffd33d',
+              // цвет заливки иконки когда активна
+              tabBarActiveTintColor: '#ffd33d',
+              // цвет заливки хедера
+              headerStyle: {
+                  backgroundColor: '#25292e',
+              },
+              headerShadowVisible: false,
+              // цвет заголовка в хедере
+              headerTintColor: '#fff',
+              // цвет футера
+              tabBarStyle: {
+                  backgroundColor: '#25292e',
+              },
           }}
       >
-        <Tabs.Screen
+
+      {/*    туториал по иконкам https://docs.expo.dev/guides/icons/#expovector-icons */}
+      <Tabs.Screen
             name="index"
             options={{
               title: 'Home',
